@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Atuliazação do sistema
-# Atualização de pacotes apt
+
 echo "Inicio da atualização do sistema"
 echo " "
 echo " "
