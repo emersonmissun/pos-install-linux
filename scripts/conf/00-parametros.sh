@@ -25,6 +25,13 @@ if [ $CONTINUAR = "n" ]; then
 	exit 1
 fi
 echo "Modificado e atualizado por: Emerson Missun"
+	echo "Data de criação: 10/10/2021"
+	echo "Data de atualização: 07/02/2023"
+	echo "Versão: 0.1"
+	echo "Testado e homologado para:"
+	echo "Ubuntu Server 20.04.x LTS x64"
+	echo "Linux Mint 21.1 x64 Cinnamon e XFCE"
+
 echo ""
 echo "Gostaria de entrar em contato com o autor do script? (s/n)"
 read CONTATO_MISSUN
@@ -39,12 +46,7 @@ if [ $CONTATO_MISSUN = "s" ]; then
 	echo "Instagram: https://instagram.com/emersonmissun/?hl=pt-br"
 	echo "Github: https://github.com/emersonmissun"
 	echo "Twitter: https://twitter.com/missun_"
-	echo "Data de criação: 10/10/2021"
-	echo "Data de atualização: 07/02/2023"
-	echo "Versão: 0.1"
-	echo "Testado e homologado para:"
-	echo "Ubuntu Server 20.04.x LTS x64"
-	echo "Linux Mint 21.1 x64 Cinnamon e XFCE"
+
 fi
 
 echo " "
