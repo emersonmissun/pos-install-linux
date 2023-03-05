@@ -1,0 +1,26 @@
+# Ignorar pastas que contém dados sensíveis 
+
+
+# Ignorar pastas comumente excluídas em projetos no GitHub 
+.vscode
+scripts/testes
+scripts/testes/*
+
+# Ignorar arquivos com extensões comuns 
+*.log
+*.lock
+*.swp
+*.swo
+*.swn
+*.swo
+*.swn
+*.swo
+
+# Ignorar arquivos de configuração do sistema operacional
+
+# Ignorar toda chave SSH presente no projeto
+id_rsa
+id_rsa.pub
+
+*.pub
+
