@@ -16,11 +16,10 @@ scripts/testes/*
 *.swn
 *.swo
 
-# Ignorar arquivos de configuração do sistema operacional
-
-# Ignorar toda chave SSH presente no projeto
-id_rsa
-id_rsa.pub
-
+# Ignorar chaves SSH presente no projeto
+*.pem
+*.key
 *.pub
 
+# Ignorar arquivos de configuração do sistema operacional
+pos-install-linux.code-workspace
