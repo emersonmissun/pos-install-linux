@@ -36,7 +36,7 @@ echo ""
 echo "Gostaria de entrar em contato com o autor do script? (s/n)"
 read CONTATO_MISSUN
 if [ $CONTATO_MISSUN = "s" ]; then
-	echo "Entre em contato com Emerson Missun, o "fuçador" do script via:"
+	echo "Entre em contato com Emerson Missun, o 'fuçador' do script via:"
 	echo "Blog pessoal: https://missun.com.br"
 	echo "Site Profissional: https://refacao.com.br"
 	echo "Facebook: https://facebook.com/emersonmissun"
