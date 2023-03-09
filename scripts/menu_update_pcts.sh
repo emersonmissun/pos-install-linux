@@ -30,8 +30,14 @@ function exibir_menu {
     echo "1) Atualizar tudo"
     echo "2) Atualizar Pacotes Apt"
     echo "3) Atualizar Pacotes SNAP"
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
     echo "4) Atualizar Pacotes Flatpak"
     echo "5) Encerrar"
+=======
+    echo "4) Atualizar Pacotes Flatpack"
+	echo "5) Reiniciar"
+    echo "6) Encerrar"
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
 }
 
 # Exibe o menu de opções na tela
@@ -47,6 +53,7 @@ while true; do
         1)
             # Atualiza todos os pacotes
             sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo autoremove && sudo apt clean && sudo apt autoclean sudo apt full-upgrade && sudo snap refresh && flatpak update
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
             echo "Atualização concluída com sucesso."
             echo "Deseja encerrar o script? [S/n]"
             read -r resposta
@@ -56,6 +63,20 @@ while true; do
             else
                 exibir_menu
                 read -r option
+=======
+            echo "Atualização concluída com sucesso. Seria necessário reiniciar o sistema."
+			echo "Deseja reiniciar o sistema? [S/n]"
+			read -r resposta 
+			if [ "$resposta" == "S" ] || [ "$resposta" == "s" ]; then
+                echo sleep 1
+				echo "Reiniciando o sistema..."
+				echo sleep 5 
+				sudo reboot 
+                exit 0
+            else
+                exibir_menu
+                read -r opcao
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
             fi
             ;;
         2)
@@ -73,11 +94,19 @@ while true; do
                 exit 0
             else
                 exibir_menu
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
                 read -r option
             fi
             ;;
         3)
             echo "Deseja atualizar os pacotes do SNAP? [S/n]"
+=======
+                read -r opcao
+            fi
+            ;;
+        3)
+            echo "Deseja atualizar os pacotes do SNAP? [S/n]" # TODO: #3 Verificar se o SNAP está instalado e desbloqueado no Linux Mint
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
             read -r resposta
             if [ "$resposta" == "S" ] || [ "$resposta" == "s" ]; then
                 # Atualiza os pacotes do SNAP
@@ -91,7 +120,11 @@ while true; do
                 exit 0
             else
                 exibir_menu
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
                 read -r option
+=======
+                read -r opcao
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
             fi
             ;;
         4)
@@ -109,10 +142,25 @@ while true; do
                 exit 0
             else
                 exibir_menu
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
                 read -r option
+=======
+                read -r opcao
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
             fi
             ;;
-        5)
+		5)
+			echo "Deseja reiniciar o sistema? [S/n]" 
+			read -r resposta 
+			if [ "$resposta" == "S" ] || [ "$resposta" == "s" ]; then
+				echo "Reiniciando o sistema..."
+				sudo reboot 
+			else
+				exibir_menu
+				read -r opcao
+			fi
+			;;
+		6)
 			echo "Deseja encerrar o script? [S/n]"
 			read -r resposta
 			if [ "$resposta" == "S" ] || [ "$resposta" == "s" ]; then
@@ -120,13 +168,21 @@ while true; do
 				exit 0
 			else
 				exibir_menu
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
 				read -r option
+=======
+				read -r opcao
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
 			fi
 			;;
 		*)
 			echo "Opção inválida."
 			exibir_menu
+<<<<<<< HEAD:scripts/menu_update_pcts.sh
 			read -r option
+=======
+			read -r opcao
+>>>>>>> effa43d (fix: 🐛 Atualização do Sistema):scripts/testes/menu_update_pcts
 			;;
 	esac
 done
