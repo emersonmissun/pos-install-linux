@@ -1,4 +1,4 @@
-#! /env/bin/bash -x 
+#! /env/bin/bash
  # 
  # Autor: Emerson Missun
  #
@@ -14,14 +14,16 @@
 # Início do script 
  # 
 echo "Iniciando o script de pós instalação" 
-sleep 3 
-clear 
+sleep 5
+clear
+
  # Apresentar o autor do script, data e versão, e o que o script faz
 echo "Autor: Emerson Missun"
 echo "Data: 14/03/2023"
 echo "Versão: 0.1.0"
 echo "Descrição: Script para automatizar a pós instalação de sistemas operacionais Linux e Windows"
-sleep 3
+echo "Aguarde 5 segundos para continuar..."
+sleep 5
 clear
 
 # Apresentar o menu de opções para o usuário escolher o que deseja fazer
@@ -38,7 +40,7 @@ read option
 if [ $option -eq 1 ]; then
 	echo "Atualizando o sistema..."
 	# Atualizar o sistema operacional executando o script de atualização na pasta /scripts do repositório, up_date_grade_clean.sh 
-	sudo sh pos-install-linux/scripts/up_date_grade_clean.sh 
+	sudo sh /home/missun/Público/scripts/pos-install-linux/scripts/up_date_grade_clean.sh 
 	sleep 3
 	clear
 elif [ $option -eq 2 ]; then
@@ -64,5 +66,3 @@ else
 	sleep 3
 	clear
 fi
-
-# Fim do script

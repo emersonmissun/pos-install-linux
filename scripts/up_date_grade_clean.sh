@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Criar variável para o caminho do script up_date_grade_clean.sh
+UPGRADE_PATH=$(dirname $(readlink -f $0))
+
 # Atuliazação do sistema
 
 echo "Inicio da atualização do sistema"
