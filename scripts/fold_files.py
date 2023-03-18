@@ -7,10 +7,15 @@
 import os # Biblioteca para criar pastas e arquivos
 import shutil # Biblioteca para mover arquivos
 
-## Criando pastas para Sistema Operacional Windows
+# Criando as pastas e arquivos dentro delas
 
-### Criando pastas Clientes 
-os.makedirs('Clientes') # Pasta para arquivos de clientes
+## Verificar se a pasta já existe. Se não existir, criar a pasta e os arquivos dentro dela. Se existir, mover os arquivos para a pasta. 
+## A pasta será criada no diretório do usuário que estiver executando o script.
+## A pasta terá o nome listado no arquivo folder.list e os arquivos terão o nome listado no arquivo file.list dentro da pasta. Esses arquivos estão no diretório script.
 
-### Criando pastas e arquivos para Projetos de SEO 
-os.makedirs('Projetos/SEO') # Pasta para arquivos de SEO
+### Carregando os arquivos com os nomes das pastas e arquivos
+folder_list = open('folder.list', 'r') # Carregando o arquivo com os nomes das pastas
+file_list = open('file.list', 'r') # Carregando o arquivo com os nomes dos arquivos
+
+### Verificando se a pasta já existe e criando-a ou movendo os arquivos para ela se ela já existir
+
