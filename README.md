@@ -1,4 +1,5 @@
 # pos-install-linux
 
-## Autor: 
-Emerson Missun
+## Autor
+
+// Emerson Missun
